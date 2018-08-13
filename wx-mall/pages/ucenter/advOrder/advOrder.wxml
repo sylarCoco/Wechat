@@ -1,0 +1,15 @@
+
+<view class="container">
+  <view class="pay-result">
+    <view class="success" wx:if="{{status == 1}}">
+      <view class="msg">订单已提交</view>
+      <view class="btns">
+          <button class="cannel" bindtap="cancelAddress" >继续采购</button>
+          <button class="save" bindtap="saveAddress">查看我的订单</button>
+      </view>
+    </view>
+    <view class="error" wx:if="{{status != 1}}">
+      <view class="msg">系统异常</view>  
+    </view>
+  </view>
+</view>

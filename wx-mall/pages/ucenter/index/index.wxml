@@ -1,0 +1,41 @@
+<view class="container">
+  <button class="profile-info" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="info">
+      <text class="name">{{userInfo.nickName}}</text>
+      <text class="level">{{userInfo.userName}}</text>
+    </view>
+  </button>
+
+  <view class="user-menu">
+    <view class="item">
+      <navigator url="/pages/ucenter/order/order" class="a">
+        <text class="icon order"></text>
+        <text class="txt">我的订单</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/ucenter/coupon/coupon" class="a">
+        <text class="icon coupon"></text>
+        <text class="txt">我的账单</text>
+      </navigator>
+    </view>
+  
+    <view class="item no-border">
+      <navigator url="url" class="a">
+        <text class="icon kefu"></text>
+        <text class="txt">联系客服</text>
+      </navigator>
+    </view>
+    
+    <view class="item item-bottom">
+      <navigator url="/pages/ucenter/feedback/feedback" class="a">
+        <text class="icon feedback"></text>
+        <text class="txt">关于我们</text>
+      </navigator>
+    </view>
+   
+  </view>
+
+  
+</view>
